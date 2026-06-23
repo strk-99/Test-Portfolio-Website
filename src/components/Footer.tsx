@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Heart } from 'lucide-react';
+
+
 import { profile } from '../data/portfolio';
 
 interface Props {
@@ -64,10 +65,8 @@ export default function Footer({ darkMode }: Props) {
           <p className={`text-xs ${darkMode ? 'text-slate-500' : 'text-slate-400'}`}>
             © 2026 Pavithra Karthikeyan. All rights reserved.
           </p>
-          <p className={`flex items-center gap-1.5 text-xs ${darkMode ? 'text-slate-500' : 'text-slate-400'}`}>
-            Built with
-            <Heart size={11} className="text-rose-400 fill-rose-400" />
-            by STRK
+          <p className={`text-xs ${darkMode ? 'text-slate-500' : 'text-slate-400'}`}>
+            Built by STRK
           </p>
         </div>
       </div>
