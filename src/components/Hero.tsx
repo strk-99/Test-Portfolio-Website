@@ -37,10 +37,10 @@ export default function Hero({ darkMode }: Props) {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Left: Text content */}
-          <div className="text-left order-1">
+          <div className="text-center lg:text-left order-1">
 
             {/* Status badge */}
-            <motion.div variants={itemVariants} className="mb-6">
+            <motion.div variants={itemVariants} className="flex justify-center lg:justify-start mb-6">
               <div className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium border
                 ${darkMode
                   ? 'bg-sky-500/10 border-sky-500/30 text-sky-300'
@@ -84,7 +84,7 @@ export default function Hero({ darkMode }: Props) {
 
             <motion.p
               variants={itemVariants}
-              className={`text-sm sm:text-base leading-relaxed mb-5 max-w-lg
+              className={`text-sm sm:text-base leading-relaxed mb-5 mx-auto lg:mx-0 max-w-md lg:max-w-none
                 ${darkMode ? 'text-slate-300/80' : 'text-slate-600'}`}
             >
               3+ years building reliable cloud infrastructure at ShellKode, Coimbatore —
@@ -94,7 +94,7 @@ export default function Hero({ darkMode }: Props) {
             {/* Location */}
             <motion.div
               variants={itemVariants}
-              className={`flex items-center gap-1.5 mb-6 text-sm
+              className={`flex items-center gap-1.5 mb-6 justify-center lg:justify-start text-sm
                 ${darkMode ? 'text-sky-300/70' : 'text-slate-500'}`}
             >
               <MapPin size={13} />
@@ -104,7 +104,7 @@ export default function Hero({ darkMode }: Props) {
             {/* CTA Buttons */}
             <motion.div
               variants={itemVariants}
-              className="flex flex-wrap gap-3 mb-6"
+              className="flex flex-wrap gap-3 mb-6 justify-center lg:justify-start"
             >
               <a
                 href="#contact"
@@ -129,7 +129,7 @@ export default function Hero({ darkMode }: Props) {
             {/* Social Links */}
             <motion.div
               variants={itemVariants}
-              className="flex items-center gap-3"
+              className="flex items-center gap-3 justify-center lg:justify-start"
             >
               <a
                 href={`mailto:${profile.email}`}
