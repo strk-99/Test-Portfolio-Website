@@ -60,7 +60,7 @@ export default function Contact({ darkMode }: Props) {
             Let's <span className="text-gradient">Connect</span>
           </h2>
           <p className={`text-lg max-w-2xl mx-auto ${darkMode ? 'text-slate-300/70' : 'text-slate-500'}`}>
-            Open to discussing cloud architecture, DevOps transformation, leadership roles, and strategic consulting engagements.
+            Open to discussing cloud infrastructure projects, DevOps roles, and collaboration opportunities.
           </p>
         </motion.div>
 
@@ -83,16 +83,16 @@ export default function Contact({ darkMode }: Props) {
               </div>
               <div>
                 <div className={`text-sm font-semibold ${darkMode ? 'text-white' : 'text-slate-800'}`}>
-                  Available for Engagement
+                  Open to New Opportunities
                 </div>
                 <div className={`text-xs mt-0.5 ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>
-                  Currently accepting consulting and fractional CTO opportunities
+                  Currently open to DevOps / Cloud Engineer roles and collaborations
                 </div>
               </div>
               <div className={`ml-auto flex items-center gap-1.5 text-xs font-medium flex-shrink-0
                 ${darkMode ? 'text-emerald-400' : 'text-emerald-600'}`}>
                 <Calendar size={13} />
-                Q3 2026
+                2026
               </div>
             </motion.div>
 
@@ -175,15 +175,15 @@ export default function Contact({ darkMode }: Props) {
                   Let's build something remarkable together.
                 </h3>
                 <p className={`text-sm leading-relaxed mb-6 ${darkMode ? 'text-slate-300/70' : 'text-slate-500'}`}>
-                  Whether you're scaling cloud infrastructure, transforming DevOps culture, or looking for an engineering leader — I'm here to help.
+                  Whether you're building cloud infrastructure, automating pipelines, or looking for a reliable DevOps engineer — let's connect.
                 </p>
 
                 <div className="space-y-2 mb-8">
                   {[
-                    'Cloud Architecture Review',
-                    'DevOps Transformation Strategy',
-                    'Engineering Leadership & Mentorship',
-                    'Platform Engineering Consulting',
+                    'AWS Cloud Infrastructure',
+                    'CI/CD Pipeline Automation',
+                    'Kubernetes & Docker Deployments',
+                    'Linux & Ansible Configuration',
                   ].map((item) => (
                     <div key={item} className={`flex items-center gap-2 text-sm
                       ${darkMode ? 'text-slate-300/70' : 'text-slate-600'}`}>
