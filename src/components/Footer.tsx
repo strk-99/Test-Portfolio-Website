@@ -62,12 +62,12 @@ export default function Footer({ darkMode }: Props) {
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-center">
           <p className={`text-xs ${darkMode ? 'text-slate-500' : 'text-slate-400'}`}>
-            Crafted with appreciation for a remarkable professional journey.
+            © 2026 Pavithra Karthikeyan. All rights reserved.
           </p>
           <p className={`flex items-center gap-1.5 text-xs ${darkMode ? 'text-slate-500' : 'text-slate-400'}`}>
             Built with
             <Heart size={11} className="text-rose-400 fill-rose-400" />
-            React · TypeScript · Tailwind · Framer Motion
+            by STRK
           </p>
         </div>
       </div>
