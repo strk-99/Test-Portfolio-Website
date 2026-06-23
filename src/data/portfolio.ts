@@ -1,6 +1,6 @@
 export const profile = {
   name: "Pavithra Karthikeyan",
-  title: "Cloud and DevOps Engineer",
+  title: "Cloud Engineer · DevOps Engineer · Team Lead",
   tagline: "Building Reliable Cloud Infrastructure with DevOps Excellence",
   summary:
     "Passionate Cloud and DevOps Engineer with 3+ years of hands-on experience at ShellKode, Coimbatore. Specialized in AWS cloud infrastructure, CI/CD automation with Jenkins, container orchestration with Kubernetes and Docker, and configuration management with Ansible. Unique background transitioning from Life Sciences to Cloud Technology, bringing strong analytical thinking and problem-solving skills to complex infrastructure challenges.",
@@ -34,16 +34,6 @@ export const coreExpertise = [
 
 export const certifications = [
   {
-    name: "AWS Certified Cloud Practitioner",
-    level: "Foundational",
-    issuer: "Amazon Web Services",
-    year: "2023",
-    category: "AWS",
-    color: "#FF9900",
-    badge: "☁️",
-    credentialId: "aws-clf",
-  },
-  {
     name: "AWS Certified Solutions Architect",
     level: "Associate",
     issuer: "Amazon Web Services",
@@ -52,36 +42,6 @@ export const certifications = [
     color: "#FF9900",
     badge: "🏆",
     credentialId: "aws-saa",
-  },
-  {
-    name: "Certified Kubernetes Administrator",
-    level: "Professional",
-    issuer: "CNCF",
-    year: "2024",
-    category: "Kubernetes",
-    color: "#326CE5",
-    badge: "⛵",
-    credentialId: "cncf-cka",
-  },
-  {
-    name: "HashiCorp Terraform Associate",
-    level: "Associate",
-    issuer: "HashiCorp",
-    year: "2024",
-    category: "IaC",
-    color: "#7B42BC",
-    badge: "🔧",
-    credentialId: "hc-tf",
-  },
-  {
-    name: "Red Hat System Administration",
-    level: "Foundational",
-    issuer: "Red Hat",
-    year: "2023",
-    category: "Linux",
-    color: "#EE0000",
-    badge: "🐧",
-    credentialId: "rh-rhcsa",
   },
 ];
 

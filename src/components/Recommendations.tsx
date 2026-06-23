@@ -47,14 +47,14 @@ export default function Recommendations({ darkMode }: Props) {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.55, delay: i * 0.1 }}
               whileHover={{ y: -4 }}
-              className={`group relative rounded-2xl p-8 transition-all duration-300
+              className={`group relative rounded-2xl p-5 sm:p-8 overflow-hidden transition-all duration-300
                 ${darkMode ? 'glass-card-dark hover:border-sky-500/25' : 'glass-card hover:border-sky-200'}
                 hover:shadow-xl`}
             >
               {/* Quote icon */}
-              <div className={`absolute top-6 right-6 opacity-15 group-hover:opacity-25 transition-opacity
+              <div className={`absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity
                 ${darkMode ? 'text-sky-400' : 'text-sky-400'}`}>
-                <Quote size={48} />
+                <Quote size={32} />
               </div>
 
               {/* Quote text */}

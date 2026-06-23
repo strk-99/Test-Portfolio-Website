@@ -8,7 +8,7 @@ interface Props {
   darkMode: boolean;
 }
 
-const categories = ['All', 'AWS', 'Kubernetes', 'IaC', 'Linux'];
+const categories = ['All', 'AWS'];
 
 const categoryColors: Record<string, string> = {
   AWS: '#FF9900',
