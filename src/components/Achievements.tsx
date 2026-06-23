@@ -56,7 +56,7 @@ export default function Achievements({ darkMode }: Props) {
   const { ref, isInView } = useScrollAnimation(0.08);
 
   return (
-    <section id="achievements" className="py-24 px-4 relative">
+    <section id="achievements" className="py-16 px-4 relative">
       <div className="max-w-7xl mx-auto" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

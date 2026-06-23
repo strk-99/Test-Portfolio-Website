@@ -13,7 +13,6 @@ const navLinks = [
   { label: 'Skills', href: '#skills' },
   { label: 'Journey', href: '#timeline' },
   { label: 'Achievements', href: '#achievements' },
-  { label: 'Recommendations', href: '#recommendations' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -68,11 +67,11 @@ export default function Navbar({ darkMode, toggleDark }: Props) {
             <a href="#hero" className="flex items-center gap-2 group">
               <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold transition-all duration-300
                 ${darkMode ? 'bg-sky-500/20 text-sky-300 group-hover:bg-sky-500/40' : 'bg-sky-500/15 text-sky-600 group-hover:bg-sky-500/25'}`}>
-                AR
+                PK
               </div>
               <span className={`hidden sm:block font-semibold text-sm tracking-tight transition-colors
                 ${darkMode ? 'text-white' : 'text-slate-800'}`}>
-                Alex Rivera
+                Pavithra K
               </span>
             </a>
 

@@ -10,7 +10,6 @@ import Timeline from './components/Timeline';
 import Achievements from './components/Achievements';
 import TechEcosystem from './components/TechEcosystem';
 import Recommendations from './components/Recommendations';
-import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './index.css';
@@ -38,7 +37,7 @@ function LoadingScreen({ darkMode }: { darkMode: boolean }) {
             ? 'bg-sky-500/20 text-sky-300 border border-sky-500/30'
             : 'bg-sky-100 text-sky-600 border border-sky-200'
           }`}>
-          AR
+          PK
         </div>
         <div className="flex items-center gap-1.5">
           {[0, 1, 2].map((i) => (
@@ -79,7 +78,7 @@ export default function App() {
     : 'bg-gradient-to-br from-sky-50 via-white to-blue-50';
 
   return (
-    <div className={`min-h-screen transition-colors duration-500 ${bgClass}`}>
+    <div className={`min-h-screen overflow-x-hidden transition-colors duration-500 ${bgClass}`}>
       <AnimatePresence>{loading && <LoadingScreen darkMode={darkMode} />}</AnimatePresence>
 
       <BackgroundOrbs darkMode={darkMode} />
@@ -94,7 +93,6 @@ export default function App() {
         <Achievements darkMode={darkMode} />
         <TechEcosystem darkMode={darkMode} />
         <Recommendations darkMode={darkMode} />
-        <Gallery darkMode={darkMode} />
         <Contact darkMode={darkMode} />
       </main>
 

@@ -31,7 +31,7 @@ export default function Footer({ darkMode }: Props) {
           <div className="flex items-center gap-3">
             <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold
               ${darkMode ? 'bg-sky-500/20 text-sky-300' : 'bg-sky-100 text-sky-600'}`}>
-              AR
+              PK
             </div>
             <span className={`font-semibold text-sm ${darkMode ? 'text-white' : 'text-slate-800'}`}>
               {profile.name}

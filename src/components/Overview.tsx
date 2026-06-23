@@ -20,7 +20,7 @@ export default function Overview({ darkMode }: Props) {
   const cardBase = darkMode ? 'glass-card-dark' : 'glass-card';
 
   return (
-    <section id="overview" className="py-24 px-4 relative">
+    <section id="overview" className="py-16 px-4 relative">
       <div className="max-w-7xl mx-auto" ref={ref}>
         {/* Section header */}
         <motion.div

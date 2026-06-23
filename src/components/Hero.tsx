@@ -184,7 +184,7 @@ export default function Hero({ darkMode }: Props) {
               <motion.div
                 whileHover={{ scale: 1.02, rotate: 0 }}
                 initial={{ rotate: 2 }}
-                className={`relative rounded-3xl p-8 w-80 shadow-2xl
+                className={`relative rounded-3xl p-6 sm:p-8 w-full max-w-xs sm:w-80 shadow-2xl
                   ${darkMode ? 'glass-card-dark' : 'glass-card'}`}
               >
                 {/* Avatar */}
@@ -195,7 +195,7 @@ export default function Hero({ darkMode }: Props) {
                         ? 'bg-gradient-to-br from-sky-500/30 to-sky-700/20 text-sky-200 border border-sky-500/20'
                         : 'bg-gradient-to-br from-sky-100 to-sky-200 text-sky-700 border border-sky-300/50'
                       }`}>
-                      AR
+                      PK
                     </div>
                     <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-400 rounded-full border-2 border-white shadow-md" />
                   </div>

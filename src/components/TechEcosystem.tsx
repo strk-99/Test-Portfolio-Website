@@ -25,7 +25,7 @@ export default function TechEcosystem({ darkMode }: Props) {
   const categories = [...new Set(technologies.map((t) => t.category))];
 
   return (
-    <section id="tech-ecosystem" className="py-24 px-4 relative">
+    <section id="tech-ecosystem" className="py-16 px-4 relative">
       <div className="max-w-7xl mx-auto" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

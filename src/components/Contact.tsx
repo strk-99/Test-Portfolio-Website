@@ -22,14 +22,14 @@ export default function Contact({ darkMode }: Props) {
     {
       icon: <LinkedinIcon size={20} />,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/alexrivera',
+      value: 'linkedin.com/in/pavithrakarthikeyan',
       href: profile.linkedin,
       description: 'Professional network & endorsements',
     },
     {
       icon: <GithubIcon size={20} />,
       label: 'GitHub',
-      value: 'github.com/alexrivera',
+      value: 'github.com/pavithrakarthikeyan',
       href: profile.github,
       description: 'Open source contributions',
     },
@@ -43,7 +43,7 @@ export default function Contact({ darkMode }: Props) {
   ];
 
   return (
-    <section id="contact" className="py-24 px-4 relative">
+    <section id="contact" className="py-16 px-4 relative">
       <div className="max-w-5xl mx-auto" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -169,7 +169,7 @@ export default function Contact({ darkMode }: Props) {
                     ? 'bg-gradient-to-br from-sky-500/30 to-sky-700/20 text-sky-200 border border-sky-500/20'
                     : 'bg-gradient-to-br from-sky-100 to-sky-200 text-sky-700 border border-sky-300/50'
                   }`}>
-                  AR
+                  PK
                 </div>
                 <h3 className={`text-2xl font-bold mb-3 ${darkMode ? 'text-white' : 'text-slate-800'}`}>
                   Let's build something remarkable together.

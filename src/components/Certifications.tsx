@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Award, ExternalLink } from 'lucide-react';
+import { Award } from 'lucide-react';
 import { certifications } from '../data/portfolio';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
@@ -8,14 +8,13 @@ interface Props {
   darkMode: boolean;
 }
 
-const categories = ['All', 'AWS', 'GCP', 'Azure', 'IaC', 'Kubernetes'];
+const categories = ['All', 'AWS', 'Kubernetes', 'IaC', 'Linux'];
 
 const categoryColors: Record<string, string> = {
   AWS: '#FF9900',
-  GCP: '#4285F4',
-  Azure: '#0078D4',
   IaC: '#7B42BC',
   Kubernetes: '#326CE5',
+  Linux: '#EE0000',
 };
 
 export default function Certifications({ darkMode }: Props) {
@@ -27,7 +26,7 @@ export default function Certifications({ darkMode }: Props) {
     : certifications.filter((c) => c.category === activeCategory);
 
   return (
-    <section id="certifications" className="py-24 px-4 relative">
+    <section id="certifications" className="py-16 px-4 relative">
       <div className="max-w-7xl mx-auto" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -128,16 +127,10 @@ export default function Certifications({ darkMode }: Props) {
               </p>
 
               {/* Footer */}
-              <div className={`flex items-center justify-between text-xs
+              <div className={`flex items-center gap-1.5 text-xs
                 ${darkMode ? 'text-slate-400' : 'text-slate-400'}`}>
-                <div className="flex items-center gap-1.5">
-                  <Award size={12} />
-                  <span>{cert.year}</span>
-                </div>
-                <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <ExternalLink size={11} />
-                  <span>View credential</span>
-                </div>
+                <Award size={12} />
+                <span>{cert.year}</span>
               </div>
             </motion.div>
           ))}

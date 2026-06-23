@@ -46,7 +46,7 @@ export default function Timeline({ darkMode }: Props) {
   const { ref, isInView } = useScrollAnimation(0.05);
 
   return (
-    <section id="timeline" className="py-24 px-4 relative">
+    <section id="timeline" className="py-16 px-4 relative">
       <div className="max-w-5xl mx-auto" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
